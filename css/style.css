@@ -1,0 +1,398 @@
+/* SOMMAIRE CSS : 
+
+    1. RESET
+    2. STYLES
+    3. HEADER
+    4. FOOTER
+    5. ACCUEIL
+    6. PROJET
+    7. CERTIFICATIONS
+
+*/
+
+/* 1.RESET */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    min-width: 1100px;
+    min-height: 760px;
+    background-color: rgba(128, 128, 128, 0.054);
+    opacity: 0;
+    transform: translateY(-30);
+    animation: apparition .8s .1s ease-out forwards;
+}
+
+@keyframes apparition {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* 2. STYLES */
+#Grand-Titre {
+    color: black;
+    font-size: 30px;
+    margin: 0px;
+}
+
+#Paragraphe {
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#Commentaire {
+    color: gray;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* POUR LIGNES SÉPARATRICE :
+
+METTRE VALEURS ESPACEMENT HAUT BAS
+    style="margin-top: px; margin-bottom: px;" 
+    
+METTRE COULEUR BORDER
+    border: solid 2px ;
+    */
+
+#ligne-horizontal {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ligne-vertical {
+    height: 200px;
+    border-radius: 10px;
+}
+
+#grande-separation {
+    /*COULEUR : background-color:  ;"*/
+    padding: 10px;
+}
+
+/* 3.HEADER */
+
+header {
+    background-color: black;
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+}
+
+div#header-left a img {
+    border-radius: 50%;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+    transition: transform .50s;
+}
+
+div#header-right a {
+    transition: transform .50s;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+div#header-left a img:hover,
+div#header-right a:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.469);
+    transition: .50s;
+}
+
+/* 4.FOOTER */
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+#footer-container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-container-middle img {
+    border-radius: 50%;
+    height: auto;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .50s;
+}
+
+#footer-container-left,
+#footer-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#footer-container-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#footer-container-left a,
+#footer-container-right a {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+#footer-texte {
+    color: white;
+    font-size: 13px;
+    margin-left: 35px;
+}
+
+/* 5.ACCUEIL */
+
+#accueil-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../IMG/backgroundaccueil.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+
+#accueil-container-bienvenue,
+#certif-container-bienvenue {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgba(0, 0, 0, 0.659);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 50%;
+    width: auto;
+    padding: 10px;
+}
+
+#accueil-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid rgba(128, 128, 128, 0.227) 2px;
+}
+
+#accueil-presentation {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#accueil-img {
+    border-radius: 5px;
+    height: auto;
+    width: 200px;
+    margin: 5px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+#accueil-decouverte {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#accueil-decouverte-btn {
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: solid rgba(128, 128, 128, 0.227) 2px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    transition: transform .50s;
+    width: 150px;
+    height: auto;
+}
+
+#accueil-decouverte-btn:hover {
+    transform: scale(1.1);
+    transition: .50s;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+#accueil-container-4 {
+    background-color: rgb(1, 124, 224);
+    border: solid 2px #017ce0;
+    padding: 20px;
+    display: flex;
+    transition: transform .50s;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#accueil-languages-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#accueil-languages-box {
+    display: flex;
+    text-align: center;
+    transition: transform .50s;
+}
+
+#accueil-nom-languages {
+    font-size: 15px;
+    color: white;
+    margin-top: 40px;
+}
+
+#accueil-languages-box:hover {
+    transform: scale(1.1);
+    transition: .50s;
+}
+
+#accueil-container-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../IMG/backgroundaccueil2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+
+#accueil-download-cv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgba(0, 0, 0, 0.659);
+    border-radius: 10px;
+    height: 50%;
+    width: auto;
+    padding: 10px;
+}
+
+#accueil-box-bouton-cv {
+    display: flex;
+}
+
+.accueil-bouton-cv {
+    border-radius: 10px;
+    padding: 7px;
+    transition: transform .50s;
+    color: white;
+    border: solid 2px white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#accueil-download-cv a p:hover {
+    transform: scale(1.1);
+    transition: .30s;
+    color: #017ce0;
+    border: solid 2px rgb(1, 124, 224);
+}
+
+/* 6.PROJET */
+
+#projet-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../IMG/backgroundaccueil.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+
+#projet-container-titre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgba(0, 0, 0, 0.659);
+    border-radius: 10px;
+    height: 50%;
+    width: auto;
+    padding: 10px;
+}
+
+#projet-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 7.CERTIFICATIONS */
+
+#certif-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .70s;
+    padding: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 10px;
+}
+
+#certif-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+    transition: .70s;
+}
+
+#certif-box p {
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: black;
+    width: 400px;
+}
+
+#certif-box div {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#certif-box img {
+    height: auto;
+    width: 135px;
+}
